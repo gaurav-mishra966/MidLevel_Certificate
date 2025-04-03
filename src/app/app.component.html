@@ -1,11 +1,10 @@
 <div class="filter-container">
   <div class="filter-item">
-    <label for="name">Repository Name:</label>
-    <input type="text" [formControl]="name" id="name"  (input)="onFilterChange()"
-      placeholder="Filter by name" />
-<!-- [(ngModel)]="name" -->
-    <label for="language">Programming Language:</label>
-    <input type="text" [formControl]="language" id="language"  (input)="onFilterChange()"
+    <label for="name">Name:</label>
+    <input type="text" [formControl]="name" id="name" (input)="onFilterChange()" placeholder="Filter by name" />
+    <!-- [(ngModel)]="name" -->
+    <label for="language">Language:</label>
+    <input type="text" [formControl]="language" id="language" (input)="onFilterChange()"
       placeholder="Filter by language" />
     <!-- [(ngModel)]="language" -->
   </div>
