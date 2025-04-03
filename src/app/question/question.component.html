@@ -1,0 +1,45 @@
+<p>question works!</p>
+<h1> Git Hub Feature Implementation Solution</h1>
+<p>Problem Statement</p>
+<p>In this application, we want to filter a list of GitHub repositories based on name and programming language.
+
+    The app uses components/repository.component.ts and its existing template to display each repository in the list.
+
+    When the user changes the "Name" or "Programming Language", the page must refresh and filter the list of
+    repositories.
+
+    Both filters must work separately and must also work together.</p>
+
+<p>Requirements</p>
+<ul>
+    <li>
+        The repositories are read from services/repository.service.ts and use components/repository.component.ts to
+        render
+        each of them.
+    </li>
+    <li>
+        Bind existing name and language variables to the template(see app.component.ts file).<br>
+        💡 HINT: How do we create bindings for reading and writing input-control values?
+    </li>
+    <li>When the name value changes, refresh the list of repositories and show the items that match or contain the
+        entered
+        text.
+        Use the full_name attribute from Repository interface.</li>
+    <li>
+        When the language value changes, refresh the list of repositories and show the items that match or contain the
+        entered text.
+        Use the language attribute from Repository interface.
+    </li>
+    <li>
+        Both filters must be used independently or at the same time.
+    </li>
+    <li>
+        If no matches are found. Render the "No matches found" message.<br>
+        💡 HINT: How do we display something when there are no items in the collection?
+
+    </li>
+    <li>
+        Notes: Do NOT rename any existing variables,Use proper types for you data. Do NOT use any or Object or as data
+        types.
+    </li>
+</ul>

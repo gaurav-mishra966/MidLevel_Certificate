@@ -1,0 +1,16 @@
+<div *ngIf="repositories && repositories.length > 0" class="card-container">
+    <div *ngFor="let repo of repositories" class="card">
+        <div class="avatar-container">
+            <img class="avatar" [src]="repo.owner.avatar_url" alt="Avatar" />
+        </div>
+        <div class="repo-details">
+            <h3 class="repo-name">{{ repo.name }}</h3>
+            <p class="repo-language">{{ repo.language }}</p>
+            <a [href]="repo.html_url" target="_blank" class="repo-link">View Repository</a>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!repositories.length">
+    <p>No repositories found!</p>
+</div>

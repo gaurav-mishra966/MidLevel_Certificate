@@ -1,0 +1,14 @@
+<div class="filter-container">
+  <div class="filter-item">
+    <label for="name">Repository Name:</label>
+    <input type="text" [formControl]="name" id="name" [(ngModel)]="name" (input)="onFilterChange()"
+      placeholder="Filter by name" />
+
+    <label for="language">Programming Language:</label>
+    <input type="text" [formControl]="language" id="language" [(ngModel)]="language" (input)="onFilterChange()"
+      placeholder="Filter by language" />
+  </div>
+</div>
+
+<app-repository></app-repository>
+<router-outlet></router-outlet>
