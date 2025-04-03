@@ -10,21 +10,16 @@ body {
   background-color: #f9f9f9;
   color: #333;
   padding: 20px;
-}
-
-router-outlet {
-  display: block;
-  margin-bottom: 20px;
+  width: 100%;
 }
 
 div {
-  background-color: #ffff;
+  background-color: #8bc34a;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   width: 100%;
-  min-width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -48,7 +43,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-color: #007bff;
+  border-color: red;
   outline: none;
 }
 
@@ -58,6 +53,7 @@ input[type="text"]::placeholder {
 
 app-repository {
   display: block;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
